@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayan & Aafreen — Royal Islamic Engagement Invitation</title>
+  <meta name="description"
+    content="You are cordially invited to celebrate the Engagement Ceremony of Aafeen Khokar & Ayan Malnas. Two Hearts, One Beautiful Journey, Insha'Allah.">
+  <meta property="og:title" content="Aafreen & Aayan — Our Engagement Invitation">
+  <meta property="og:description"
+    content="Two Hearts, One Beautiful Journey, Insha'Allah. Join us in celebrating our engagement ceremony.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Amiri & Scheherazade New (Arabic), Cinzel & Cormorant Garamond (Royal Headings), Plus Jakarta Sans (Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="cover-active">
+
+  <!-- ==========================================================================
+       OPENING INVITATION COVER EXPERIENCE
+       ========================================================================== -->
+  <div id="invitation-cover" aria-modal="true" role="dialog">
+    <div class="cover-curtain-left"></div>
+    <div class="cover-curtain-right"></div>
+
+    <div class="cover-card">
+      <div class="cover-border-ornament"></div>
+      <div class="cover-corner cover-corner-tl"></div>
+      <div class="cover-corner cover-corner-tr"></div>
+      <div class="cover-corner cover-corner-bl"></div>
+      <div class="cover-corner cover-corner-br"></div>
+
+      <div class="cover-bismillah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <p class="cover-subtitle">In the Name of Allah, the Most Gracious, the Most Merciful</p>
+      <p class="cover-celebrate-text">You are cordially invited to celebrate the engagement of</p>
+
+      <div class="cover-names">
+        <span id="cover-groom-name">Ayan Malnas</span>
+        <span>&</span>
+        <span id="cover-bride-name">Aafeen Khokar</span>
+      </div>
+
+      <div class="cover-arabic-names" id="cover-arabic-names" dir="rtl">آفرين خوكر & أيان مالناس</div>
+
+      <div class="cover-divider">
+        <i class="fa-solid fa-star-and-crescent"></i>
+      </div>
+
+      <button type="button" id="btn-enter-invitation" class="btn-enter-invitation" aria-label="Enter Invitation">
+        <span>Enter Invitation</span>
+        <i class="fa-solid fa-feather-pointed"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Subtle Islamic Geometric Background Pattern -->
+  <div class="islamic-bg-pattern" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       FLOATING NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="floating-navbar" id="main-nav" aria-label="Main Navigation">
+    <a href="#hero" class="nav-brand">
+      <span class="nav-logo-star"><i class="fa-solid fa-star-and-crescent"></i></span>
+      <span class="nav-logo-monogram">A &amp; A</span>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#quran" class="nav-link">Qur'an</a></li>
+      <li><a href="#couple" class="nav-link">The Couple</a></li>
+      <li><a href="#story" class="nav-link">Our Story</a></li>
+      <li><a href="#events" class="nav-link">Events</a></li>
+      <li><a href="#countdown" class="nav-link">Countdown</a></li>
+      <li><a href="#venue" class="nav-link">Venue</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#guestbook" class="nav-link">Guestbook</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Ambience Audio Toggle (Muted by Default) -->
+      <button type="button" class="btn-nav-audio" id="btn-nav-audio"
+        title="Play Ambience (Gentle Meditative Oud / Chimes)" aria-label="Toggle Ambience Sound">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+
+      <!-- Share Invitation Modal Trigger -->
+      <button type="button" class="btn-nav-share trigger-share-modal" title="Share Invitation"
+        aria-label="Share Invitation">
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+
+      <a href="#rsvp" class="btn-nav-rsvp">RSVP</a>
+
+      <button type="button" class="hamburger-btn" id="hamburger-toggle" aria-label="Open Navigation Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <button type="button" class="mobile-drawer-close" id="drawer-close-btn" aria-label="Close Navigation">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#quran"><i class="fa-solid fa-book-quran"></i> Holy Qur'an</a></li>
+      <li><a href="#couple"><i class="fa-solid fa-heart"></i> The Couple</a></li>
+      <li><a href="#story"><i class="fa-solid fa-timeline"></i> Our Story</a></li>
+      <li><a href="#events"><i class="fa-solid fa-calendar-days"></i> Ceremony &amp; Events</a></li>
+      <li><a href="#countdown"><i class="fa-solid fa-hourglass-half"></i> Countdown</a></li>
+      <li><a href="#venue"><i class="fa-solid fa-map-location-dot"></i> Venue &amp; Map</a></li>
+      <li><a href="#gallery"><i class="fa-solid fa-images"></i> Photo Gallery</a></li>
+      <li><a href="#dua"><i class="fa-solid fa-hands-praying"></i> Du'a &amp; Blessings</a></li>
+      <li><a href="#rsvp"><i class="fa-solid fa-envelope-open-text"></i> RSVP</a></li>
+      <li><a href="#guestbook"><i class="fa-solid fa-book"></i> Guestbook</a></li>
+    </ul>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero-section" id="hero">
+    <canvas id="hero-stars-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="islamic-crescent-badge">
+        <i class="fa-solid fa-star-and-crescent"></i>
+        <span>Islamic Engagement Ceremony</span>
+      </div>
+
+      <div class="hero-bismillah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <p class="hero-families-text">Together with their families</p>
+
+      <div class="hero-couple-title">
+        <h1 class="hero-name" id="hero-groom-name">Ayan Malnas</h1>
+        <span class="hero-ampersand">&amp;</span>
+        <h1 class="hero-name" id="hero-bride-name">Aafreen Khokar</h1>
+      </div>
+
+      <div class="hero-arabic-calligraphy-bar" id="hero-arabic-calligraphy" dir="rtl">آفرين خوكر&amp; أيان مالناس
+
+        <div>
+          <span class="hero-ceremony-tag">Engagement Ceremony</span>
+        </div>
+
+        <p class="hero-subtitle" id="hero-subtitle">"Two Hearts, One Beautiful Journey, Insha'Allah."</p>
+
+        <div class="hero-meta-box">
+          <div class="hero-meta-item">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span id="hero-date">Saturday, 8th October 2026</span>
+          </div>
+          <div class="hero-meta-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="hero-venue-name">Haji Palace Khandwa</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#rsvp" class="btn-primary">
+            <i class="fa-solid fa-envelope-open-text"></i> RSVP Attendance
+          </a>
+          <button type="button" class="btn-secondary trigger-share-modal">
+            <i class="fa-solid fa-share-nodes"></i> Share Invitation
+          </button>
+        </div>
+
+        <a href="#quran" class="hero-scroll-indicator" aria-label="Scroll down to explore">
+          <span>Scroll to Discover</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+
+      <!-- Mosque silhouette bottom accent -->
+      <div class="hero-mosque-silhouette" aria-hidden="true"></div>
+  </header>
+
+  <!-- ==========================================================================
+       QUR'AN QUOTE SECTION
+       ========================================================================== -->
+  <section class="quran-section" id="quran">
+    <div class="quran-container">
+      <div class="quran-arch-card">
+        <div class="quran-inner-border"></div>
+        <div class="quran-icon"><i class="fa-solid fa-book-quran"></i></div>
+
+        <!-- Primary Verse: Surah An-Naba 78:8 -->
+        <div class="quran-verse-arabic-primary" id="quran-arabic-primary" dir="rtl">
+          وَخَلَقْنَاكُمْ أَزْوَاجًا
+        </div>
+        <p class="quran-verse-translation-primary" id="quran-trans-primary">
+          “And We created you in pairs.”
+        </p>
+        <span class="quran-verse-reference" id="quran-ref-primary">— Qur'an 78:8</span>
+
+        <div class="quran-divider">
+          <i class="fa-solid fa-star-and-crescent"></i>
+        </div>
+
+        <!-- Secondary Verse: Surah Ar-Rum 30:21 -->
+        <div class="quran-secondary-card">
+          <div class="quran-verse-arabic-secondary" id="quran-arabic-secondary" dir="rtl">
+            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم
+            مَّوَدَّةً وَرَحْمَةً
+          </div>
+          <p class="quran-verse-translation-secondary" id="quran-trans-secondary">
+            “And among His signs is that He created for you from yourselves spouses that you may find tranquility in
+            them; and He placed between you affection and mercy.”
+          </p>
+          <span class="quran-verse-reference" id="quran-ref-secondary" style="margin-bottom:0;">— Qur'an 30:21</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BRIDE & GROOM SECTION
+       ========================================================================== -->
+  <section class="couple-section" id="couple">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">The Blessed Union</span>
+        <h2 class="section-title">Meet the Couple</h2>
+        <div class="section-arabic-motif" dir="rtl">العروس والعريس</div>
+        <p class="section-subtitle">With hearts aligned in devotion, family honor, and mutual love, walking hand in hand
+          towards a lifetime of barakah.</p>
+      </div>
+
+      <div class="couple-grid">
+        <!-- Bride Card -->
+        <article class="couple-card">
+          <div class="arch-photo-container">
+            <div class="arch-halo-ring"></div>
+            <div class="arch-photo-frame">
+              <img id="bride-photo" src="assets/images/bride.jpg" alt="Aafeen Khokar - The Bride" />
+            </div>
+          </div>
+
+          <span class="couple-role-badge">The Radiant Bride</span>
+          <h3 class="couple-person-name" id="bride-name">Aafreen Khokar</h3>
+          <p class="couple-person-arabic" id="bride-arabic" dir="rtl">آفرين خوكر</p>
+
+          <div class="couple-parents-box">
+            <span class="parents-label">Beloved Daughter of</span>
+            <p class="parents-names" id="bride-parents">Mr. Sultan Khokar &amp; Mrs. Saida bee</p>
+          </div>
+        </article>
+
+        <!-- Groom Card -->
+        <article class="couple-card">
+          <div class="arch-photo-container">
+            <div class="arch-halo-ring"></div>
+            <div class="arch-photo-frame">
+              <img id="groom-photo" src="assets/images/groom.jpg" alt="Ayan Malnas - The Groom" />
+            </div>
+          </div>
+
+          <span class="couple-role-badge">The Blessed Groom</span>
+          <h3 class="couple-person-name" id="groom-name">Ayan Malnas</h3>
+          <p class="couple-person-arabic" id="groom-arabic" dir="rtl">أيان مالناس</p>
+
+          <div class="couple-parents-box">
+            <span class="parents-label">Beloved Son of</span>
+            <p class="parents-names" id="groom-parents">Mr. Akram Malnas &amp; Mrs. Mubeena bee</p>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR STORY TIMELINE
+       ========================================================================== -->
+  <section class="story-section" id="story">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">A Journey of Destiny</span>
+        <h2 class="section-title">Our Story</h2>
+        <div class="section-arabic-motif" dir="rtl">قصتنا المباركة</div>
+        <p class="section-subtitle">How patience, prayer, and family blessings brought two souls together under the
+          guidance of Allah's divine decree.</p>
+      </div>
+
+      <div class="story-timeline" id="story-timeline-container">
+        <!-- Rendered dynamically from config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COUNTDOWN SECTION
+       ========================================================================== -->
+  <section class="countdown-section" id="countdown">
+    <div class="countdown-wrapper">
+      <span class="section-eyebrow" style="color:var(--gold-300);">Insha'Allah</span>
+      <h2 class="section-title" style="color:#ffffff;">Counting Down To Our Special Day</h2>
+      <div class="section-arabic-motif" style="color:var(--gold-400);" dir="rtl">نترقب بشوق لقاء الأحبة</div>
+
+      <div class="countdown-grid">
+        <div class="countdown-box">
+          <div class="countdown-number" id="count-days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="count-hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="count-mins">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-number" id="count-secs">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+
+      <div id="countdown-ended" class="countdown-ended-message">
+        Alhamdulillah — Today is the Day!
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CEREMONY & EVENT DETAILS
+       ========================================================================== -->
+  <section class="events-section" id="events">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Program Itinerary</span>
+        <h2 class="section-title">Ceremony &amp; Celebrations</h2>
+        <div class="section-arabic-motif" dir="rtl">برنامج الحفل المبارك</div>
+        <p class="section-subtitle">Please join us in every blessed moment of our engagement celebrations as we recite
+          sacred prayers and celebrate with loved ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VENUE & LOCATION SECTION
+       ========================================================================== -->
+  <section class="venue-section" id="venue">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Destination</span>
+        <h2 class="section-title">The Grand Venue</h2>
+        <div class="section-arabic-motif" dir="rtl">موقع الحفل</div>
+        <p class="section-subtitle">An exquisite palace reflecting the pinnacle of Islamic architecture, arched marble
+          colonnades, and ambient lantern light.</p>
+      </div>
+
+      <div class="venue-showcase-card">
+        <div class="venue-image-wrapper">
+          <img src="assets/images/venue.jpg" alt="Haji Palace" loading="lazy" />
+        </div>
+
+        <div class="venue-details-wrapper">
+          <h3 class="venue-name" id="venue-name-display">Haji palace </h3>
+          <p class="venue-address" id="venue-address-display"> Behind Urdu School, Khaspura, Khandwa
+          </p>
+
+          <div class="venue-dress-box">
+            <span class="venue-dress-title"><i class="fa-solid fa-vest"></i> Suggested Dress Code</span>
+            <p class="venue-dress-text" id="venue-dress-display">Modest Luxury / Traditional Formal (Emerald &amp;
+              Champagne Tones Welcomed)</p>
+          </div>
+
+          <div class="venue-btn-group">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" id="btn-get-directions">
+              <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+            </a>
+            <button type="button" class="btn-copy-address" id="btn-copy-venue-address">
+              <i class="fa-regular fa-copy"></i> Copy Address
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="venue-map-iframe-container">
+        <iframe id="venue-map-iframe" title="Venue Location Google Map" src="" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHOTO GALLERY
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Cherished Moments</span>
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="section-arabic-motif" dir="rtl">معرض الصور</div>
+        <p class="section-subtitle">Glimpses into our journey, delicate details, and the royal setting prepared for our
+          guests.</p>
+      </div>
+
+      <div class="gallery-filter-nav">
+        <button type="button" class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button type="button" class="gallery-filter-btn" data-filter="couple">The Couple</button>
+        <button type="button" class="gallery-filter-btn" data-filter="bride">The Bride</button>
+        <button type="button" class="gallery-filter-btn" data-filter="groom">The Groom</button>
+        <button type="button" class="gallery-filter-btn" data-filter="details">Details</button>
+        <button type="button" class="gallery-filter-btn" data-filter="venue">Palace Venue</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid-container">
+        <!-- Rendered dynamically from config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="gallery-lightbox" aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+    <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev-btn" aria-label="Previous Image"><i
+        class="fa-solid fa-chevron-left"></i></button>
+    <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next-btn" aria-label="Next Image"><i
+        class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="Full size preview" />
+      <p class="lightbox-caption" id="lightbox-caption-text"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DU'A & BLESSINGS BANNER
+       ========================================================================== -->
+  <section class="dua-section" id="dua">
+    <div class="section-container">
+      <div class="dua-card">
+        <div class="dua-card-arabic" dir="rtl">ادْعُوا لَنَا بِالْبَرَكَةِ وَالتَّوْفِيقِ</div>
+        <h2 class="dua-title">Keep Us in Your Du'as</h2>
+        <p class="dua-quote">
+          “Your presence and prayers mean more to us than anything. Please remember us in your Du'as as we begin this
+          beautiful journey together.”
+        </p>
+        <a href="#guestbook" class="btn-primary">
+          <i class="fa-solid fa-feather"></i> Leave a Du'a in Guestbook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RSVP SECTION
+       ========================================================================== -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Kindly Respond</span>
+        <h2 class="section-title">RSVP to Our Celebration</h2>
+        <div class="section-arabic-motif" dir="rtl">تأكيد الحضور</div>
+        <p class="section-subtitle">We request the honor of your presence. Please let us know if you will be joining us
+          by 10th October 2026.</p>
+      </div>
+
+      <div class="rsvp-card">
+        <!-- RSVP Form -->
+        <form id="engagement-rsvp-form" class="rsvp-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvp-fullname"><i class="fa-regular fa-user"></i> Full Name *</label>
+              <input type="text" id="rsvp-fullname" class="form-control" placeholder="e.g. Dr. Omar Al-Sayed"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="rsvp-phone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+              <input type="tel" id="rsvp-phone" class="form-control" placeholder="+971 50 000 0000" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvp-email"><i class="fa-regular fa-envelope"></i> Email Address</label>
+              <input type="email" id="rsvp-email" class="form-control" placeholder="name@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="rsvp-guest-count"><i class="fa-solid fa-users"></i> Number of Guests</label>
+              <select id="rsvp-guest-count" class="form-control">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5+ Guests (Family)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-clipboard-check"></i> Will You Attend?</label>
+            <div class="radio-group-cards">
+              <div class="radio-card">
+                <input type="radio" id="attend-yes" name="attendance" value="Yes, Insha'Allah" checked />
+                <label for="attend-yes"><i class="fa-solid fa-check"></i> Yes, Insha'Allah</label>
+              </div>
+              <div class="radio-card">
+                <input type="radio" id="attend-no" name="attendance" value="Sorry, unable to attend" />
+                <label for="attend-no"><i class="fa-solid fa-xmark"></i> Sorry, unable to attend</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-message"><i class="fa-regular fa-comment-dots"></i> Message for the Couple
+              (Optional)</label>
+            <textarea id="rsvp-message" class="form-control" rows="3"
+              placeholder="Write a warm note or du'a for the couple..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary"
+            style="align-self: center; margin-top: 1rem; width: 100%; max-width: 320px; justify-content: center;">
+            <i class="fa-regular fa-paper-plane"></i> Submit RSVP
+          </button>
+        </form>
+
+        <!-- Success Confirmation Message -->
+        <div id="rsvp-success-confirmation" class="rsvp-submitted-confirmation">
+          <div class="rsvp-confirmed-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="rsvp-confirmed-bismillah" dir="rtl">جَزَاكُمُ اللَّهُ خَيْرًا</div>
+          <h3 class="rsvp-confirmed-title">JazakAllahu Khairan for your response</h3>
+          <p class="rsvp-confirmed-text">
+            Your RSVP has been gratefully recorded. We are looking forward to celebrating this blessed milestone with
+            you, Insha'Allah!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GUESTBOOK SECTION
+       ========================================================================== -->
+  <section class="guestbook-section" id="guestbook">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Warm Wishes &amp; Du'as</span>
+        <h2 class="section-title">Digital Guestbook</h2>
+        <div class="section-arabic-motif" dir="rtl">سجل التهاني والدعاء</div>
+        <p class="section-subtitle">Leave your heartfelt blessings and prayers for Amina and Zayd. All messages are
+          preserved with love.</p>
+      </div>
+
+      <div class="guestbook-layout">
+        <!-- Guestbook Form -->
+        <div class="guestbook-form-card">
+          <h3 style="font-family:var(--font-royal); color:var(--emerald-900); margin-bottom:1.25rem;">
+            <i class="fa-solid fa-pen-nib" style="color:var(--gold-500); margin-right:8px;"></i> Send Your Du'a
+          </h3>
+
+          <form id="guestbook-form" style="display:flex; flex-direction:column; gap:1.2rem;">
+            <div class="form-group">
+              <label for="guestbook-name">Your Name *</label>
+              <input type="text" id="guestbook-name" class="form-control"
+                placeholder="e.g. Auntie Yasmin & Uncle Haroon" required />
+            </div>
+
+            <div class="form-group">
+              <label for="guestbook-city">City / Country</label>
+              <input type="text" id="guestbook-city" class="form-control" placeholder="e.g. London, UK" />
+            </div>
+
+            <div class="form-group">
+              <label for="guestbook-message">Your Blessing / Du'a *</label>
+              <textarea id="guestbook-message" class="form-control" rows="4"
+                placeholder="May Allah bless your union with eternal peace, love, and barakah..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="justify-content:center;">
+              <i class="fa-solid fa-hands-praying"></i> Post Blessing
+            </button>
+          </form>
+        </div>
+
+        <!-- Guestbook Messages Stream -->
+        <div class="guestbook-messages-container" id="guestbook-messages-list">
+          <!-- Rendered dynamically from localStorage or defaults -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FINAL SECTION & BLESSINGS CLOSING
+       ========================================================================== -->
+  <footer class="closing-section">
+    <div class="section-container">
+      <div class="closing-dua-arabic" id="closing-dua-arabic" dir="rtl">
+        بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+      </div>
+
+      <p class="closing-translation" id="closing-dua-trans">
+        “May Allah bless your journey together.”
+      </p>
+
+      <h2 class="closing-names" id="closing-names">Ayan Malnas &amp; Aafreen Khokar</h2>
+      <p class="closing-subtext">With boundless love, gratitude, and Du'as</p>
+
+      <!-- Royal Mosque & Crescent Silhouette -->
+      <div class="closing-silhouette" aria-hidden="true">
+        <svg viewBox="0 0 800 120" fill="currentColor">
+          <path
+            d="M0,120 L0,105 Q50,95 80,100 L80,45 Q85,40 90,45 L90,100 Q140,88 200,95 L200,20 Q205,10 210,20 L210,95 Q260,90 320,100 L320,60 Q330,55 340,60 L340,100 Q390,80 400,10 Q405,0 410,10 L420,100 Q480,85 540,95 L540,25 Q545,15 550,25 L550,95 Q600,90 660,100 L660,50 Q670,45 680,50 L680,100 Q740,90 800,105 L800,120 Z"
+            opacity="0.6" />
+          <path d="M400,20 A15,15 0 0,0 415,5 A18,18 0 1,1 395,25 A15,15 0 0,0 400,20 Z" fill="#cfa858" />
+        </svg>
+      </div>
+
+      <div class="site-credits">
+        <p>A Sacred Union Celebrated In Deen &amp; Honor</p>
+        <p>&copy; 2026 Ayan &amp; Aafreen. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SHARE INVITATION MODAL
+       ========================================================================== -->
+  <div class="share-modal" id="share-invitation-modal" aria-modal="true" role="dialog">
+    <div class="share-modal-card">
+      <h3 class="share-modal-title">Share Invitation</h3>
+      <p class="share-modal-subtitle">Share this joyous invitation with family, elders, and loved ones.</p>
+
+      <div class="share-channels-grid">
+        <a href="#" class="share-channel-btn whatsapp" id="share-btn-whatsapp" aria-label="Share via WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#" class="share-channel-btn facebook" id="share-btn-facebook" aria-label="Share via Facebook">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="share-channel-btn x-twitter" id="share-btn-x" aria-label="Share via X">
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>X / Twitter</span>
+        </a>
+        <button type="button" class="share-channel-btn copy-link" id="share-btn-copylink"
+          aria-label="Copy Invitation Link">
+          <i class="fa-regular fa-copy"></i>
+          <span>Copy Link</span>
+        </button>
+      </div>
+
+      <button type="button" class="btn-secondary" id="share-modal-close-btn"
+        style="width:100%; justify-content:center;">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notification" id="global-toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-text">Notification message</span>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button type="button" class="back-to-top-btn" id="btn-back-to-top" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Configuration & Application Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
